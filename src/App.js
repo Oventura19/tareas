@@ -21,7 +21,7 @@ class App extends Component {
           )} 
           </ul>
             <form onSubmit={this.handleSubmit} >
-              <input type="text" id = "new-task" value={this.state.newTask} onChange={this.addNewTask.bind(this)} placeholder="Ingresa una tarea y oprime Enter"/>
+              <input type="text" id ="new-task" value={this.state.newTask} onChange={this.addNewTask.bind(this)} placeholder="Ingresa una tarea y oprime Enter"/>
             </form>
         </div>
       </div>
