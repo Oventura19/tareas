@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 /// Modifica el componente para que se puedan agregar tareas
 
 class App extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
       tasks : ['Sacar la ropa', 'Hacer la cama', 'Leer un rato'],
       newTask: ""
@@ -20,7 +20,7 @@ class App extends Component {
             <li key={act}>{act}</li>
           )} 
           </ul>
-            <form onSubmit={this.handleSubmit} >
+            <form onSubmit={this.handleSubmit}>
               <input type="text" id ="new-task" value={this.state.newTask} onChange={this.addNewTask.bind(this)} placeholder="Ingresa una tarea y oprime Enter"/>
             </form>
         </div>
